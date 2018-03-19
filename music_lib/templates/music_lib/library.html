@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library</title>
+    {% load static %}
+
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <h1 class="header">Music Library</h1>
+
+    <table class="table_border">
+        <tr class="table_style">
+            <th>Song</th>
+            <th>Album & Artist</th>
+            <th>Year</th>
+        </tr>
+        <tr class="table_style">
+        {% for library in all_library %}
+            <td>{{ library.song_list }}</td>
+            <td>{{ library.album }}</td>
+            <td>{{ library.song_year }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+
+</html>

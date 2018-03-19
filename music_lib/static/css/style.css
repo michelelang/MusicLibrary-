@@ -1,0 +1,9 @@
+.table_border {
+    width: 100%;
+    border: 1px solid;
+    text-align: left;
+}
+
+.header {
+    text-align: center;
+}
